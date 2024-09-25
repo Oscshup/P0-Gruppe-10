@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Chip
+    uniqueID: 3917903429
+    locked: 0
+  - name: Ground
+    uniqueID: 112035153
+    locked: 0
+  - name: Tree
+    uniqueID: 2278979427
+    locked: 0
