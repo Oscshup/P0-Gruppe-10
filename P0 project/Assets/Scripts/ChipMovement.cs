@@ -13,9 +13,7 @@ public class ChipMovement : MonoBehaviour
     private bool isMovingToEnd = false;  // Check the chip move to end point
     public Animator animatorLighting; // Reference to Lighting the animation 
      public GameObject Lighting; // Reference to the Lighting panel object (with animation)
-     public Animator animatorTree; // Reference to Tree the animation 
-     public GameObject Tree; // Reference to the Tree panel object (with animation)
-
+     
     void Update()
     {
         if (isMovingToMid)
@@ -61,16 +59,8 @@ public class ChipMovement : MonoBehaviour
             // Activate the lighting and start its animation
             Lighting.SetActive(true);
             animatorLighting.Play("LightingRootsAnimation");
-            OnLightingAnimationEnd();
             
         }
-    }
-
-    public void OnLightingAnimationEnd()
-    {
-        Debug.Log("Lighting animation done, starting tree animation.");
-        Tree.SetActive(true);
-        animatorTree.Play("TreeAnimation");
     }
 
 }
