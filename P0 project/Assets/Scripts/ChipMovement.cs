@@ -11,8 +11,10 @@ public class ChipMovement : MonoBehaviour
     private bool isMovingToMid = true;  // Check the chip move to mid point
     private bool isWaitingForClick = false;  // Wait to chip are in mid to click
     private bool isMovingToEnd = false;  // Check the chip move to end point
-    public Animator animator;
-     public GameObject tree; // Reference to the tree object (with animation)
+    public Animator animatorLighting; // Reference to Lighting the animation 
+     public GameObject Lighting; // Reference to the Lighting panel object (with animation)
+     public Animator animatorTree; // Reference to Tree the animation 
+     public GameObject Tree; // Reference to the Tree panel object (with animation)
 
     void Update()
     {
@@ -56,10 +58,19 @@ public class ChipMovement : MonoBehaviour
             Destroy(gameObject);  //Delete the chip
             Debug.Log("Start Tree");
             
-            // Activate the tree and start its animation
-            tree.SetActive(true);
-            animator.Play("TreeAnimation");
+            // Activate the lighting and start its animation
+            Lighting.SetActive(true);
+            animatorLighting.Play("LightingRootsAnimation");
+            OnLightingAnimationEnd();
             
         }
     }
+
+    public void OnLightingAnimationEnd()
+    {
+        Debug.Log("Lighting animation done, starting tree animation.");
+        Tree.SetActive(true);
+        animatorTree.Play("TreeAnimation");
+    }
+
 }
