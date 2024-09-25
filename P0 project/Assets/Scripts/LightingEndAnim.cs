@@ -19,7 +19,7 @@ public class LightingEndAnim : MonoBehaviour
         {
             Tree.SetActive(true);
         }
-        
+
         animatorTree.Play("TreeAnimation");
     }
 }

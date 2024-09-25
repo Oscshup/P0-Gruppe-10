@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IPD/ChipTree.unity
     guid: c8b7e3a2cd554c04fb128022e8a98678
+  - enabled: 1
+    path: Assets/Scenes/IPD/ChipTreeIlde.unity
+    guid: 26397ae7586e44e468c06a7259ed4080
+  - enabled: 1
+    path: Assets/Scenes/IPD/FAQMed.unity
+    guid: 1937aa458ed3d91448ab7575d4d6f7a6
+  - enabled: 1
+    path: Assets/Scenes/IPD/FAQSound.unity
+    guid: 1d19722b4cedeb84eab904753b879a37
+  - enabled: 1
+    path: Assets/Scenes/IPD/FAQStudentLife.unity
+    guid: 7b217874c61265e40b17d2766ebdb657
+  - enabled: 1
+    path: Assets/Scenes/IPD/FAQVR.unity
+    guid: 3b5076bf2a084544a9b27f7d194c72a1
   m_configObjects: {}
