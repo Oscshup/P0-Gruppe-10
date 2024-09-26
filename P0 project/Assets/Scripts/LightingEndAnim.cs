@@ -9,10 +9,12 @@ public class LightingEndAnim : MonoBehaviour
     public Animator animatorTree; // Reference to Tree the animation 
      public GameObject Tree; // Reference to the Tree panel object (with animation)
 
+    public GameObject LightningRoot;
 
 
     public void OnLightingAnimationEnd()
     {
+         Destroy(LightningRoot);  
         Debug.Log("Lighting animation done, starting tree animation.");
         
         if (!Tree.activeSelf)
@@ -22,4 +24,7 @@ public class LightingEndAnim : MonoBehaviour
 
         animatorTree.Play("TreeAnimation");
     }
+
+
+
 }

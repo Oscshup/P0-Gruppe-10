@@ -59,8 +59,8 @@ public class ChipMovement : MonoBehaviour
             // Activate the lighting and start its animation
             Lighting.SetActive(true);
             animatorLighting.Play("LightingRootsAnimation");
-            
+
+                       
         }
     }
-
 }
