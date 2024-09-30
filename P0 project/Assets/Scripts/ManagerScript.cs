@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ManagerScript : MonoBehaviour // Make sure this matches the script filename
 {
     public GameObject[] colorPanels; // Array to store the color panels
-
+    
     // Method to enable color panels
     public void ShowColorPanels()
     {
@@ -16,17 +16,4 @@ public class ManagerScript : MonoBehaviour // Make sure this matches the script 
         }
     }
 
-    public void ChangeScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-    }
-
-    public void Exit()
-    {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
-    }
 }
