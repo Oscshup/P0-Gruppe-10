@@ -15,5 +15,11 @@ public class ManagerScript : MonoBehaviour // Make sure this matches the script 
             panel.SetActive(true);
         }
     }
+    
+    //
+    public void ChangeScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 
 }
