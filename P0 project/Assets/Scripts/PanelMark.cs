@@ -7,6 +7,7 @@ public class PanelHoverTextMeshPro : MonoBehaviour, IPointerEnterHandler, IPoint
     public string hoverText; // The specific text for this panel
     public TextMeshProUGUI displayText; // Reference to the TextMeshPro element
 
+
     // Called when the mouse pointer enters the panel
     public void OnPointerEnter(PointerEventData eventData)
     {

@@ -12,7 +12,7 @@ public class ChipMovement : MonoBehaviour
     private bool isWaitingForClick = false;  // Wait to chip are in mid to click
     private bool isMovingToEnd = false;  // Check the chip move to end point
     public Animator animatorLighting; // Reference to Lighting the animation 
-     public GameObject Lighting; // Reference to the Lighting panel object (with animation)
+    public GameObject Lighting; // Reference to the Lighting panel object (with animation)
      
     void Update()
     {

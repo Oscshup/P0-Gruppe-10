@@ -6,8 +6,7 @@ public class LigtingRootEnd : MonoBehaviour
 {
    public Animator animatorTree; // Reference to Tree the animation 
     public GameObject Tree; // Reference to the Tree panel object (with animation)
-
-    public GameObject RemoveLightningRoot;
+    public GameObject RemoveLightningRoot; 
 
 
     public void OnLightingAnimationEnd()

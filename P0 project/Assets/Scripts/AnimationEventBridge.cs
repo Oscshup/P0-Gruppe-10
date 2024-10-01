@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class AnimationEventBridge : MonoBehaviour
 {
-    public Animator animator;
-    public ManagerScript managerScript;
+    public Animator animator; //Tree animator
+    public ManagerScript managerScript; 
 
     void Update()
     {
